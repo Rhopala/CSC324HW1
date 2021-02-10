@@ -2,15 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-<body class="theme-1">
-   <div class="container">
-       <div class="left">
-           Left
-       </div>
-       <div class="right">
-           Right
-           <button class="button">Button</button>
-       </div>
-   </div>
-</body>
-</html>
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
