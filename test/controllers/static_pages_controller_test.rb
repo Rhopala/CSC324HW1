@@ -28,4 +28,10 @@ end
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
+
+  test "should get roll" do
+    get static_pages_roll_url
+    assert_response :success
+    assert_select "title", "Roll | #{@base_title}"
+  end
 end
