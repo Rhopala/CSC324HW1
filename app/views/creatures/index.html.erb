@@ -1,0 +1,13 @@
+<% provide(:title, 'Creatures') %>
+
+<h1>Creatures</h1>
+
+<ul>
+
+<% @creatures.each do | creature | %>
+
+<li><%= creature.birds %><%= creature.mammals %><%= creature.insects %><%= creature.others %></li>
+
+<% end %>
+
+</ul>

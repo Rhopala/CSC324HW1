@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  birds: MyString
+  mammals: MyString
+  insects: MyString
+  others: MyString
+
+two:
+  birds: MyString
+  mammals: MyString
+  insects: MyString
+  others: MyString

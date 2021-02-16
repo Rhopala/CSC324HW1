@@ -1,0 +1,13 @@
+<% provide(:title, 'maindishes') %>
+
+<h1>Main Dishes</h1>
+
+<ul>
+
+<% @maindishes.each do | maindish | %>
+
+<li><%= maindish.name %></li>
+
+<% end %>
+
+</ul>
