@@ -35,9 +35,4 @@ end
   assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
 
-  test "should get roll" do
-    get static_pages_roll_url
-    assert_response :success
-    assert_select "title", "Roll | #{@base_title}"
-  end
 end

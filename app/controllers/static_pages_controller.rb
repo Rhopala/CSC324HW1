@@ -1,6 +1,11 @@
 class StaticPagesController < ApplicationController
   def home
       
+      if logged_in?
+        @micropost = current_user.microposts.build
+        @feed_items = current_user.feed.paginate(page: params[:page])
+      end      
+    
       creatures_list = Creature.all
 
       cNum = (0..creatures_list.length-1).to_a.shuffle.first
@@ -9,10 +14,6 @@ class StaticPagesController < ApplicationController
 
   end
   
-  def roll
-    @result = (1..6).to_a.shuffle.first
-  end
-
   def help
   end
 
