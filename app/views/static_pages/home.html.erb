@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: #FFFBF0;
-}
+<%= link_to "American Robin", american_robin_path %>
+<%= link_to "Barred Owl", barred_owl_path %>
+<%= link_to "Bumblebee", bumblebee_path %>
+<%= link_to "Cicada", cicada_path %>
+<%= link_to "Common Grakele", common_grakele_path %>
+<%= link_to "Eagle", eagle_path %>
+<%= link_to "Firefly", firefly_path %>
+<%= link_to "Grasshopper", grasshopper_path %>
+<%= link_to "House Sparrow", house_sparrow_path %>
+<%= link_to "Northern Cardinal", northern_cardinal_path %>
+<%= link_to "Rabbit", rabbit_path %>
+<%= link_to "Squirrel", squirrel_path %>
 
-h1 {
-  color: #2E4E7E;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
 <% if logged_in? %>
 <div class="row">
 <aside class="col-md-4">
@@ -35,13 +28,8 @@ p {
 </div>
 <% else %>
 <div class="center jumbotron">
-<h1>Welcome to the Sample App</h1>
-<h2>
-This is the home page for the
-<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-sample application.
-</h2>
-<p> random creatures for your consideration: <%= @creatures.birds %> <%= @creatures.mammals %> <%= @creatures.insects %> <%= @creatures.others %></p>
+<h1>Welcome to Grinnell College Creatures Observation Records!</h1>
+<p>Please log in or sign up to view posts.</p>
 <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 <% end %>

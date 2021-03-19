@@ -20,4 +20,40 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def american_robin
+  end
+
+  def barred_owl
+  end
+
+  def bumblebee
+  end
+
+  def cicada
+  end
+
+  def common_grakle
+  end
+
+  def eagle
+  end
+
+  def firefly
+  end
+
+  def grasshopper
+  end
+
+  def house_sparrow
+  end
+
+  def northern_cardinal
+  end
+
+  def rabbit
+  end
+
+  def squirrel
+  end
+
 end

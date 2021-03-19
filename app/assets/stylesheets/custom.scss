@@ -4,6 +4,7 @@
 /* universal */
 body {
 padding-top: 60px;
+background-color: #fffbf0;
 }
 section {
 overflow: auto;
@@ -19,17 +20,25 @@ text-align: center;
 margin-bottom: 10px;
 }
 
+.image-size {
+  max-width: 300px;
+  max-height: 500px;
+}
 
 /* typography */
 h1, h2, h3, h4, h5, h6 {
 line-height: 1;
 }
+
 h1 {
 font-size: 3em;
 letter-spacing: -2px;
 margin-bottom: 30px;
 text-align: center;
+color: #2e4e7e;
+font-weight: bold;
 }
+
 h2 {
 font-size: 1.2em;
 letter-spacing: -1px;
@@ -38,18 +47,25 @@ text-align: center;
 font-weight: normal;
 color: #777;
 }
+
 p {
-font-size: 1.1em;
-line-height: 1.7em;
+font-size: 2em;
+line-height: 3em;
 }
 
 
 /* header */
+
+header {
+background-color: #2e4e7e;
+height: 15px;
+}
+
 #logo {
 float: left;
 margin-right: 10px;
-font-size: 1.7em;
-color: #fff;
+font-size: 2.7em;
+color: #fffbf0;
 text-transform: uppercase;
 letter-spacing: -1px;
 padding-top: 9px;
@@ -58,7 +74,7 @@ font-weight: bold;
 
 #logo:hover {
 
-color: #fff;
+color: #fffbf0;
 text-decoration: none;
 }
 
