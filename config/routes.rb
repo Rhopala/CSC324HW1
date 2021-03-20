@@ -20,8 +20,13 @@
   get '/rabbit', to: 'static_pages#rabbit'
   get '/squirrel', to: 'static_pages#squirrel'
   
-  resources :users
+  resources :users do  
+    member do
+      get :following, :followers
+    end
+  end
   resources :microposts,         only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html 
 end
 

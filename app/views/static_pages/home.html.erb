@@ -17,6 +17,9 @@
 <section class="user_info">
 <%= render 'shared/user_info' %>
 </section>
+<section class="stats">
+<%= render 'shared/stats' %>
+</section>
 <section class="micropost_form">
 <%= render 'shared/micropost_form' %>
 </section>
@@ -29,7 +32,8 @@
 <% else %>
 <div class="center jumbotron">
 <h1>Welcome to Grinnell College Creatures Observation Records!</h1>
-<p>Please log in or sign up to view posts.</p>
+<p>You can click any link with creature name to see specific observation record of the Creature.</p>
+<p>Please log in or sign up to view posts or post yourself.</p>
 <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 <% end %>
